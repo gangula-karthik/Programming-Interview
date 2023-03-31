@@ -31,7 +31,7 @@ def string_to_int(y):
         else: 
             raise ValueError("non numeric character found")
 
-    return (res) if negative else (-1 * res)
+    return (-1 * res) if negative else (res)
 
 print(int_to_string(10))
 print(string_to_int("432143"))
