@@ -9,4 +9,4 @@ programming interview solutions in python
 - TODO: 11.9, 11.10
 
 ### Strings
-DONE: 6.1
+- DONE: 6.1
