@@ -8,6 +8,9 @@ def replace_and_remove(s, size):
         if s[i] == 'a': 
             a_count += 1
 
+    # resize the list
+    s.extend([''] * (a_count))
+
     # backward iteration
     cur_idx = write_idx - 1
     write_idx += a_count - 1
@@ -26,5 +29,7 @@ def replace_and_remove(s, size):
     return final_size
 
 
-# test cases
-print(replace_and_remove(['a', 'c', 'a', 'a', '', ''], 6))
+if __name__ == '__main__':
+    s = ['a', 'c', 'd', 'b', 'b', 'c', 'a']
+    print(replace_and_remove(s, len(s)))
+    print(s)
